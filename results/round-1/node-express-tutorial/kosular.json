@@ -1,0 +1,93 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": false,
+  "why": "errors",
+  "alive": true,
+  "k6": {
+   "p95": 1945.7663213499998,
+   "p99": 27795.036624789995,
+   "err": 0.014140561495654349,
+   "rps": 1038.3332696414373,
+   "requests": 639720,
+   "created": 62930
+  },
+  "new_rows": 63049,
+  "box": {
+   "samples": 623,
+   "min_mem_avail_mb": 353.0,
+   "peak_app_mb": 478.0,
+   "peak_app_anon_mb": 235.0,
+   "peak_tcp": 13377.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 17.4,
+   "mean_steal": 9.7,
+   "mean_iowait": 2.9
+  },
+  "generators": [
+   {
+    "min_free_mb": 2535,
+    "min_idle": 35,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 05 20:35:03 hedef6 kernel: TCP: request_sock_TCP: Possible SYN flooding on port 0.0.0.0:80. Sending cookies."
+  ],
+  "t0": 1793910593.0205376,
+  "ramp_start": 1793910600.776,
+  "seconds": 626,
+  "knee": 13750,
+  "generator_window_end": 1793910960.776
+ },
+ {
+  "run": "01-hold-12400",
+  "kind": "hold",
+  "users": 12400,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 176.36428759999998,
+   "p99": 465.7211646799996,
+   "err": 5.5538250158766954e-05,
+   "rps": 1104.200294347374,
+   "requests": 414129,
+   "created": 40993
+  },
+  "new_rows": 40993,
+  "box": {
+   "samples": 379,
+   "min_mem_avail_mb": 440.0,
+   "peak_app_mb": 280.0,
+   "peak_app_anon_mb": 170.0,
+   "peak_tcp": 8061.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 22.7,
+   "mean_steal": 4.7,
+   "mean_iowait": 1.4
+  },
+  "generators": [
+   {
+    "min_free_mb": 4405,
+    "min_idle": 39,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793911221.6303952,
+  "ramp_start": 1793911225.823,
+  "seconds": 380,
+  "generator_window_end": null
+ }
+]

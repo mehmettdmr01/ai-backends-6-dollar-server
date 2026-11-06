@@ -1,0 +1,3 @@
+00-ramp-25000 knee 14166 oom {'samples': 596, 'min_mem_avail_mb': 2.0, 'peak_app_mb': 487.0, 'peak_app_anon_mb': 295.0, 'peak_tcp': 24250.0, 'peak_conntrack': 0.0, 'mean_idle': 19.5, 'mean_steal': 8.3, 'mean_iowait': 1.6}
+01-hold-12700 PASS {'p95': 17.6770675, 'p99': 100.8660790399999, 'err': 0, 'rps': 1134.7545902936124, 'requests': 425549, 'created': 42391} {'samples': 380, 'min_mem_avail_mb': 388.0, 'peak_app_mb': 680.0, 'peak_app_anon_mb': 190.0, 'peak_tcp': 12709.0, 'peak_conntrack': 0.0, 'mean_idle': 46.7, 'mean_steal': 12.0, 'mean_iowait': 0.2}
+SCORE gemini-1 do-6 12700

@@ -1,0 +1,131 @@
+[
+ {
+  "run": "00-ramp-20000",
+  "kind": "ramp",
+  "users": 20000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": false,
+  "why": "errors",
+  "alive": true,
+  "k6": {
+   "p95": 1924.9669590999977,
+   "p99": 3591.63703802,
+   "err": 0.10426125179658363,
+   "rps": 696.8101693316601,
+   "requests": 429287,
+   "created": 38540
+  },
+  "new_rows": null,
+  "box": {
+   "samples": 622,
+   "min_mem_avail_mb": 493.0,
+   "peak_app_mb": 148.0,
+   "peak_app_anon_mb": 120.0,
+   "peak_tcp": 9578.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 10.6,
+   "mean_steal": 8.1,
+   "mean_iowait": 0.0
+  },
+  "generators": [
+   {
+    "min_free_mb": 3041,
+    "min_idle": 30,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 05 12:08:30 hedef6 kernel: TCP: request_sock_TCP: Possible SYN flooding on port 0.0.0.0:80. Sending cookies."
+  ],
+  "t0": 1793879971.762914,
+  "ramp_start": 1793879978.462,
+  "seconds": 624,
+  "knee": 8333
+ },
+ {
+  "run": "01-hold-7500",
+  "kind": "hold",
+  "users": 7500,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": false,
+  "why": "p95",
+  "alive": true,
+  "k6": {
+   "p95": 1321.1106445999997,
+   "p99": 2707.561845200001,
+   "err": 0,
+   "rps": 655.865681488252,
+   "requests": 245957,
+   "created": 24583
+  },
+  "new_rows": null,
+  "box": {
+   "samples": 378,
+   "min_mem_avail_mb": 336.0,
+   "peak_app_mb": 133.0,
+   "peak_app_anon_mb": 108.0,
+   "peak_tcp": 7618.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 5.0,
+   "mean_steal": 8.2,
+   "mean_iowait": 0.0
+  },
+  "generators": [
+   {
+    "min_free_mb": 5707,
+    "min_idle": 46,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793880598.301639,
+  "ramp_start": 1793880602.318,
+  "seconds": 380
+ },
+ {
+  "run": "02-hold-6800",
+  "kind": "hold",
+  "users": 6800,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 587.6652193999989,
+   "p99": 1080.9926843599999,
+   "err": 0,
+   "rps": 602.4740583968608,
+   "requests": 225937,
+   "created": 22722
+  },
+  "new_rows": null,
+  "box": {
+   "samples": 377,
+   "min_mem_avail_mb": 505.0,
+   "peak_app_mb": 165.0,
+   "peak_app_anon_mb": 102.0,
+   "peak_tcp": 6848.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 10.1,
+   "mean_steal": 9.5,
+   "mean_iowait": 0.0
+  },
+  "generators": [
+   {
+    "min_free_mb": 5782,
+    "min_idle": 48,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793880980.6861951,
+  "ramp_start": 1793880983.055,
+  "seconds": 378
+ }
+]

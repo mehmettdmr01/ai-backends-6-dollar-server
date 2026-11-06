@@ -1,0 +1,22 @@
+{
+ "name": "claude-1",
+ "tier": "do-6",
+ "score": 18000,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": false,
+ "knee": 20000,
+ "history": [
+  [
+   "ramp",
+   25000,
+   20000
+  ],
+  [
+   "hold",
+   18000,
+   true
+  ]
+ ]
+}

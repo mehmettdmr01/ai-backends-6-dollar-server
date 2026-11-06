@@ -1,0 +1,3 @@
+2026-11-06T06:47:27+00:00 hedef6-7 systemd[1]: apt-daily-upgrade.service: Deactivated successfully.
+2026-11-06T06:47:27+00:00 hedef6-7 systemd[1]: Finished apt-daily-upgrade.service - Daily apt upgrade and clean activities.
+2026-11-06T06:47:27+00:00 hedef6-7 systemd[1]: apt-daily-upgrade.service: Consumed 3min 22.628s CPU time, 694.7M memory peak, 0B memory swap peak.

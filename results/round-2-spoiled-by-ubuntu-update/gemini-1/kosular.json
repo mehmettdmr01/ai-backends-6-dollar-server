@@ -1,0 +1,107 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": false,
+  "why": "oom",
+  "alive": false,
+  "k6": {
+   "p95": 6222.833825999999,
+   "p99": 41381.711867919985,
+   "err": 0.11421413961001652,
+   "rps": 988.4514122508226,
+   "requests": 608940,
+   "created": 53805
+  },
+  "new_rows": 53805,
+  "box": {
+   "samples": 596,
+   "min_mem_avail_mb": 2.0,
+   "peak_app_mb": 487.0,
+   "peak_app_anon_mb": 295.0,
+   "peak_tcp": 24250.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 19.5,
+   "mean_steal": 8.3,
+   "mean_iowait": 1.6
+  },
+  "generators": [
+   {
+    "min_free_mb": 4973,
+    "min_idle": 35,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 5184,
+    "min_idle": 63,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 06 06:46:27 hedef6-7 kernel: systemd invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0",
+   "Nov 06 06:46:27 hedef6-7 kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/system.slice/yarisma.service,task=node-MainThread,pid=11397,uid=1000",
+   "Nov 06 06:46:27 hedef6-7 kernel: Out of memory: Killed process 11397 (node-MainThread) total-vm:2041684kB, anon-rss:302056kB, file-rss:2688kB, shmem-rss:0kB, UID:1000 pgtables:4740kB oom_score_adj:0"
+  ],
+  "t0": 1793947000.5214057,
+  "ramp_start": 1793947004.315,
+  "seconds": 625,
+  "knee": 14166,
+  "generator_window_end": 1793947374.299
+ },
+ {
+  "run": "01-hold-12700",
+  "kind": "hold",
+  "users": 12700,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 17.6770675,
+   "p99": 100.8660790399999,
+   "err": 0,
+   "rps": 1134.7545902936124,
+   "requests": 425549,
+   "created": 42391
+  },
+  "new_rows": 42391,
+  "box": {
+   "samples": 380,
+   "min_mem_avail_mb": 388.0,
+   "peak_app_mb": 680.0,
+   "peak_app_anon_mb": 190.0,
+   "peak_tcp": 12709.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 46.7,
+   "mean_steal": 12.0,
+   "mean_iowait": 0.2
+  },
+  "generators": [
+   {
+    "min_free_mb": 5878,
+    "min_idle": 38,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 5925,
+    "min_idle": 51,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793947627.6450222,
+  "ramp_start": 1793947630.085,
+  "seconds": 381,
+  "generator_window_end": null
+ }
+]

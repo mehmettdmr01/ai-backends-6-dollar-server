@@ -1,0 +1,22 @@
+{
+ "name": "node-express-tutorial",
+ "tier": "do-6",
+ "score": 12400,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": false,
+ "knee": 13750,
+ "history": [
+  [
+   "ramp",
+   25000,
+   13750
+  ],
+  [
+   "hold",
+   12400,
+   true
+  ]
+ ]
+}

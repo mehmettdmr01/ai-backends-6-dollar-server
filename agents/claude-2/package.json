@@ -1,0 +1,8 @@
+{
+  "name": "notes-api",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "better-sqlite3": "13.0.3"
+  }
+}

@@ -1,0 +1,169 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 702.3137898999958,
+   "p99": 2294.49784977,
+   "err": 0,
+   "rps": 1229.2365259502878,
+   "requests": 757272,
+   "created": 75904
+  },
+  "new_rows": 75909,
+  "box": {
+   "samples": 624,
+   "min_mem_avail_mb": 226.0,
+   "peak_app_mb": 650.0,
+   "peak_app_anon_mb": 352.0,
+   "peak_tcp": 24836.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 42.0,
+   "mean_steal": 9.8,
+   "mean_iowait": 0.9
+  },
+  "generators": [
+   {
+    "min_free_mb": 4268,
+    "min_idle": 49,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 4392,
+    "min_idle": 56,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793948493.7470102,
+  "ramp_start": 1793948499.583,
+  "seconds": 626,
+  "knee": null,
+  "generator_window_end": null
+ },
+ {
+  "run": "01-ramp-50000",
+  "kind": "ramp",
+  "users": 50000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": false,
+  "why": "oom",
+  "alive": false,
+  "k6": {
+   "p95": 8212.007115400003,
+   "p99": 18139.738152560418,
+   "err": 0.4728060040179454,
+   "rps": 2189.3509040191284,
+   "requests": 1348864,
+   "created": 71082
+  },
+  "new_rows": 71084,
+  "box": {
+   "samples": 619,
+   "min_mem_avail_mb": 11.0,
+   "peak_app_mb": 658.0,
+   "peak_app_anon_mb": 395.0,
+   "peak_tcp": 32388.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 45.3,
+   "mean_steal": 7.3,
+   "mean_iowait": 3.7
+  },
+  "generators": [
+   {
+    "min_free_mb": 2898,
+    "min_idle": 51,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 2990,
+    "min_idle": 56,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 06 07:20:02 hedef6-7 kernel: systemd invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0",
+   "Nov 06 07:20:02 hedef6-7 kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/system.slice/yarisma.service,task=node-MainThread,pid=15939,uid=1000",
+   "Nov 06 07:20:02 hedef6-7 kernel: Out of memory: Killed process 15939 (node-MainThread) total-vm:2146404kB, anon-rss:399292kB, file-rss:2688kB, shmem-rss:0kB, UID:1000 pgtables:5688kB oom_score_adj:0"
+  ],
+  "t0": 1793949122.8743708,
+  "ramp_start": 1793949131.608,
+  "seconds": 629,
+  "knee": 23333,
+  "generator_window_end": 1793949441.604
+ },
+ {
+  "run": "02-hold-21000",
+  "kind": "hold",
+  "users": 21000,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 80.5973845,
+   "p99": 588.7097896999957,
+   "err": 0,
+   "rps": 1873.7171572333991,
+   "requests": 702689,
+   "created": 70172
+  },
+  "new_rows": 70173,
+  "box": {
+   "samples": 380,
+   "min_mem_avail_mb": 279.0,
+   "peak_app_mb": 681.0,
+   "peak_app_anon_mb": 292.0,
+   "peak_tcp": 21030.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 31.5,
+   "mean_steal": 5.6,
+   "mean_iowait": 1.1
+  },
+  "generators": [
+   {
+    "min_free_mb": 4766,
+    "min_idle": 45,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 4749,
+    "min_idle": 60,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets",
+   "Nov 06 07:28:53 hedef6-7 kernel: TCP: too many orphaned sockets"
+  ],
+  "t0": 1793949753.9875395,
+  "ramp_start": 1793949757.305,
+  "seconds": 381,
+  "generator_window_end": null
+ }
+]

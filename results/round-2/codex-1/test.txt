@@ -1,0 +1,29 @@
+  ok   health
+  ok   list is 200 JSON
+  ok   list has 20 notes
+  ok   list is newest first
+  ok   list is compact with keys in order
+  ok   one note
+  ok   one note has its bytes as stored
+  ok   GET /notes/0
+  ok   GET /notes/-1
+  ok   GET /notes/abc
+  ok   GET /notes/1.5
+  ok   missing note
+  ok   unknown path
+  ok   no token
+  ok   not bearer
+  ok   unknown token
+  ok   auth before body
+  ok   bad json
+  ok   body empty
+  ok   body spaces
+  ok   body number
+  ok   body missing
+  ok   body 501 chars
+  ok   500 chars accepted and trimmed
+  ok   created_at is in the stored format
+  ok   read back
+  ok   new note on top of the list
+  ok   special characters round-trip
+passed=28 failed=0

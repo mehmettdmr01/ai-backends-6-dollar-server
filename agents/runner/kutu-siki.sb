@@ -1,0 +1,24 @@
+(version 1)
+(allow default)
+; writes only into the run folder, temp folders and the agent's own state
+(deny file-write*)
+(allow file-write*
+  (subpath (param "RUN"))
+  (subpath "/private/tmp")
+  (subpath "/private/var/folders")
+  (subpath "/dev")
+  (subpath "~/.gemini")
+  (subpath "~/.antigravity")
+  (subpath "~/Library/Caches")
+  (subpath "~/Library/Application Support"))
+; and cannot read the measurement code, the hidden test, the other runs or any keys
+(deny file-read* file-write*
+  (subpath "~/Developer")
+  (subpath "~/Desktop")
+  (subpath "~/Documents")
+  (subpath "~/Downloads")
+  (subpath "~/.ssh")
+  (subpath "~/.config")
+  (subpath "~/.cache/deney-runs/v7")
+  ;KARDESLER
+  )

@@ -1,0 +1,22 @@
+{
+ "name": "codex-1",
+ "tier": "do-6",
+ "score": 22500,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": true,
+ "knee": 25000,
+ "history": [
+  [
+   "ramp",
+   25000,
+   null
+  ],
+  [
+   "hold",
+   22500,
+   true
+  ]
+ ]
+}

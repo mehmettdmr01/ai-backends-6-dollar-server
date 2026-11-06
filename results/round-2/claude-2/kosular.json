@@ -1,0 +1,53 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 13.141787599999953,
+   "p99": 114.0254676199996,
+   "err": 0,
+   "rps": 1242.4467498292902,
+   "requests": 765386,
+   "created": 76864
+  },
+  "new_rows": 76864,
+  "box": {
+   "samples": 620,
+   "min_mem_avail_mb": 198.0,
+   "peak_app_mb": 661.0,
+   "peak_app_anon_mb": 375.0,
+   "peak_tcp": 24847.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 56.2,
+   "mean_steal": 4.9,
+   "mean_iowait": 1.1
+  },
+  "generators": [
+   {
+    "min_free_mb": 4283,
+    "min_idle": 51,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 4328,
+    "min_idle": 54,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793950148.931006,
+  "ramp_start": 1793950152.602,
+  "seconds": 622,
+  "knee": null,
+  "generator_window_end": null
+ }
+]

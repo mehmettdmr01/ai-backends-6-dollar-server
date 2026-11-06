@@ -1,0 +1,22 @@
+Build the backend described in SPEC.md, in Node.js, and make it handle as many simultaneous users as you can on a small server.
+
+The server: 1 vCPU, 1 GB RAM, no swap, Ubuntu 24.04, a shared cloud VM. The OS shares that CPU and RAM with you. If you run out of memory the kernel kills your process and you lose.
+Scoring: the most users your server holds for 5 minutes with p95 under 1 second and under 1% errors, still alive at the end. A user clicks once every 5 to 15 seconds (see yuk.js).
+
+What is in this folder:
+- SPEC.md: the API, the rules, and what a user does.
+- seed/notes.db and seed/tokens.json. Always test on a fresh copy of notes.db: the tests write to it.
+- test_api.py: start your server on a fresh copy of the database, then run: python3 test_api.py http://127.0.0.1:<port> seed/tokens.json. It must pass completely. The server will also face checks you cannot see, that enforce the rules in SPEC.md.
+- yuk.js: the k6 script that will score you. k6 is not installed here.
+- node_modules: express 5.1.0, fastify 5.6.2, better-sqlite3 13.0.3 and their dependencies.
+
+Rules:
+- Node.js 26 (node is on the PATH here), JavaScript or TypeScript. No native code of your own. The packages in node_modules and Node's built-ins (including node:sqlite) are the only ones you can use.
+- Everything under "Rules" in SPEC.md applies.
+- On the server you serve 0.0.0.0:80 directly, with no proxy in front, and you cannot change kernel settings.
+- Write install.sh (as root, once, on a clean Ubuntu 24.04), build.sh and start.sh (runs in the foreground, reads SQLITE_PATH, HOST and PORT). The server has Node 26 at /opt/node26/bin.
+- This machine is an Apple M1 Mac, not the server, and you cannot test on Linux. build.sh runs on the server, which has internet, so it should install your dependencies there: do not ship node_modules. Your package.json must pin the exact versions listed above.
+- Stay in this folder. There is no internet here.
+- You have about 45 minutes.
+
+When you are done, write NOTES.md: what you did to make it handle more users, and why.

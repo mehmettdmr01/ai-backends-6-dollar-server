@@ -1,0 +1,22 @@
+{
+ "name": "gemini-1",
+ "tier": "do-6",
+ "score": 19500,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": false,
+ "knee": 21666,
+ "history": [
+  [
+   "ramp",
+   25000,
+   21666
+  ],
+  [
+   "hold",
+   19500,
+   true
+  ]
+ ]
+}

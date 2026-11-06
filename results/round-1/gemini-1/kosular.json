@@ -1,0 +1,102 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 971.0825793499996,
+   "p99": 2370.2671230799992,
+   "err": 0,
+   "rps": 1224.2941124008955,
+   "requests": 754292,
+   "created": 75808
+  },
+  "new_rows": 75814,
+  "box": {
+   "samples": 624,
+   "min_mem_avail_mb": 215.0,
+   "peak_app_mb": 674.0,
+   "peak_app_anon_mb": 353.0,
+   "peak_tcp": 24864.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 44.3,
+   "mean_steal": 7.8,
+   "mean_iowait": 1.0
+  },
+  "generators": [
+   {
+    "min_free_mb": 1891,
+    "min_idle": 19,
+    "busy_share": 0.007,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:31:35 hedef6 kernel: TCP: too many orphaned sockets"
+  ],
+  "t0": 1793913670.2886877,
+  "ramp_start": 1793913677.431,
+  "seconds": 627,
+  "knee": 21666,
+  "generator_window_end": 1793914227.415
+ },
+ {
+  "run": "01-hold-19500",
+  "kind": "hold",
+  "users": 19500,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 14.146834349999983,
+   "p99": 75.85955613999903,
+   "err": 0,
+   "rps": 1742.4904521142205,
+   "requests": 653630,
+   "created": 65722
+  },
+  "new_rows": 65722,
+  "box": {
+   "samples": 382,
+   "min_mem_avail_mb": 300.0,
+   "peak_app_mb": 642.0,
+   "peak_app_anon_mb": 277.0,
+   "peak_tcp": 19511.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 35.5,
+   "mean_steal": 5.5,
+   "mean_iowait": 0.9
+  },
+  "generators": [
+   {
+    "min_free_mb": 2689,
+    "min_idle": 27,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793914299.6279929,
+  "ramp_start": 1793914305.626,
+  "seconds": 384,
+  "generator_window_end": null
+ }
+]

@@ -1,0 +1,8 @@
+{
+ "name": "claude-2",
+ "tier": "do-6",
+ "score": null,
+ "status": "running",
+ "test_passed": true,
+ "hidden_passed": true
+}

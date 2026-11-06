@@ -1,0 +1,154 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 180.2030841499999,
+   "p99": 646.3410058700007,
+   "err": 0,
+   "rps": 1239.754141168105,
+   "requests": 763724,
+   "created": 76477
+  },
+  "new_rows": 76479,
+  "box": {
+   "samples": 620,
+   "min_mem_avail_mb": 169.0,
+   "peak_app_mb": 670.0,
+   "peak_app_anon_mb": 410.0,
+   "peak_tcp": 24837.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 46.0,
+   "mean_steal": 6.6,
+   "mean_iowait": 1.3
+  },
+  "generators": [
+   {
+    "min_free_mb": 4367,
+    "min_idle": 56,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 4384,
+    "min_idle": 59,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793945345.431929,
+  "ramp_start": 1793945349.451,
+  "seconds": 622,
+  "knee": null,
+  "generator_window_end": null
+ },
+ {
+  "run": "01-ramp-50000",
+  "kind": "ramp",
+  "users": 50000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": false,
+  "why": "errors",
+  "alive": true,
+  "k6": {
+   "p95": 6017.2004975,
+   "p99": 6941.86612158,
+   "err": 0.07197020821175133,
+   "rps": 1709.8733279791354,
+   "requests": 1053426,
+   "created": 97912
+  },
+  "new_rows": 98888,
+  "box": {
+   "samples": 619,
+   "min_mem_avail_mb": 33.0,
+   "peak_app_mb": 650.0,
+   "peak_app_anon_mb": 424.0,
+   "peak_tcp": 30202.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 17.7,
+   "mean_steal": 7.1,
+   "mean_iowait": 12.6
+  },
+  "generators": [
+   {
+    "min_free_mb": 2776,
+    "min_idle": 33,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 2663,
+    "min_idle": 58,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793945970.0891564,
+  "ramp_start": 1793945977.437,
+  "seconds": 627,
+  "knee": 25000,
+  "generator_window_end": 1793946307.437
+ },
+ {
+  "run": "02-hold-22500",
+  "kind": "hold",
+  "users": 22500,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 278.5400491999999,
+   "p99": 491.2721819000011,
+   "err": 0,
+   "rps": 2004.5426088813892,
+   "requests": 751753,
+   "created": 75396
+  },
+  "new_rows": 75396,
+  "box": {
+   "samples": 384,
+   "min_mem_avail_mb": 238.0,
+   "peak_app_mb": 650.0,
+   "peak_app_anon_mb": 346.0,
+   "peak_tcp": 22519.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 26.9,
+   "mean_steal": 6.5,
+   "mean_iowait": 2.1
+  },
+  "generators": [
+   {
+    "min_free_mb": 4508,
+    "min_idle": 41,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 4630,
+    "min_idle": 41,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1793946601.123095,
+  "ramp_start": 1793946607.214,
+  "seconds": 386,
+  "generator_window_end": null
+ }
+]

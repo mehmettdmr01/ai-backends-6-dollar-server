@@ -1,0 +1,113 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 600,
+  "hold_s": 1,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 272.9525695999997,
+   "p99": 596.9943140599997,
+   "err": 0,
+   "rps": 1237.9219004735044,
+   "requests": 762667,
+   "created": 76649
+  },
+  "new_rows": 76652,
+  "box": {
+   "samples": 624,
+   "min_mem_avail_mb": 152.0,
+   "peak_app_mb": 642.0,
+   "peak_app_anon_mb": 409.0,
+   "peak_tcp": 24837.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 38.7,
+   "mean_steal": 12.4,
+   "mean_iowait": 1.7
+  },
+  "generators": [
+   {
+    "min_free_mb": 2131,
+    "min_idle": 19,
+    "busy_share": 0.008,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 20:57:18 hedef6 kernel: TCP: too many orphaned sockets"
+  ],
+  "t0": 1793911613.4800303,
+  "ramp_start": 1793911620.934,
+  "seconds": 627,
+  "knee": 20000,
+  "generator_window_end": 1793912130.934
+ },
+ {
+  "run": "01-hold-18000",
+  "kind": "hold",
+  "users": 18000,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 259.0425522000002,
+   "p99": 533.0249234600001,
+   "err": 0,
+   "rps": 1603.2666786101922,
+   "requests": 601338,
+   "created": 59690
+  },
+  "new_rows": 59690,
+  "box": {
+   "samples": 380,
+   "min_mem_avail_mb": 301.0,
+   "peak_app_mb": 494.0,
+   "peak_app_anon_mb": 292.0,
+   "peak_tcp": 18036.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 21.4,
+   "mean_steal": 21.0,
+   "mean_iowait": 1.2
+  },
+  "generators": [
+   {
+    "min_free_mb": 3112,
+    "min_idle": 6,
+    "busy_share": 0.011,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets",
+   "Nov 05 21:03:44 hedef6 kernel: TCP: too many orphaned sockets"
+  ],
+  "t0": 1793912242.813063,
+  "ramp_start": 1793912247.783,
+  "seconds": 383,
+  "generator_window_end": null
+ }
+]

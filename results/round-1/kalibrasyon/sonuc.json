@@ -1,0 +1,24 @@
+{
+ "name": "kalibrasyon",
+ "tier": "do-6",
+ "score": 6800,
+ "status": "scored",
+ "knee": 8333,
+ "history": [
+  [
+   "ramp",
+   20000,
+   8333
+  ],
+  [
+   "hold",
+   7500,
+   false
+  ],
+  [
+   "hold",
+   6800,
+   true
+  ]
+ ]
+}

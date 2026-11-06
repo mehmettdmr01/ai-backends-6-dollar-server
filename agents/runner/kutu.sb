@@ -1,0 +1,17 @@
+(version 1)
+(allow default)
+; the agents must not see the measurement code, the hidden test, the other runs, or any keys
+(deny file-read* file-write*
+  (subpath "~/Developer")
+  (subpath "~/Desktop")
+  (subpath "~/Documents")
+  (subpath "~/Downloads")
+  (subpath "~/.ssh")
+  (subpath "~/.config/pufi")
+  (subpath "~/.cache/deney-runs/v7")
+  ;KARDESLER
+  )
+(deny file-write*
+  (literal "~/.zshrc")
+  (literal "~/.zprofile")
+  (subpath "~/Library/LaunchAgents"))

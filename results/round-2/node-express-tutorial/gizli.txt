@@ -1,0 +1,9 @@
+{
+ "no_cache": [],
+ "tokens": [],
+ "durable": [],
+ "acked": 1726,
+ "lost": 0,
+ "passed": true
+}
+Failed to kill unit yarisma.service: Failed to send signal SIGKILL to auxiliary processes: Invalid argument
